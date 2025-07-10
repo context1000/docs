@@ -1,5 +1,5 @@
 ---
-id: example-rule
+name: example-rule
 title: Example Rule
 tags: [tag1, tag2]
 projects: [project1, project2]

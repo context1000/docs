@@ -1,5 +1,5 @@
 ---
-id: guide1
+name: guide1
 title: Guide Title
 related:
   rfcs: []

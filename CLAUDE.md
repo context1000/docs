@@ -47,7 +47,7 @@ All documentation files should include frontmatter with:
 
 ```yaml
 ---
-id: unique-identifier
+name: unique-identifier
 title: Document Title
 related:
   rfcs: []

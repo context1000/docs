@@ -1,6 +1,6 @@
 ---
 # ADR template: https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/locales/en/templates/decision-record-template-by-michael-nygard/index.md
-id: 0003-example
+name: 0003-example
 title: ADR Title
 status: accepted # rejected, draft
 tags: [tag1, tag2]
