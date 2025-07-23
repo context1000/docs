@@ -4,10 +4,12 @@ name: 0001-example
 title: RFC Title
 status: draft # accepted, rejected
 tags: [tag1, tag2]
-projects: [project1, project2]
 related:
+  rfcs: []
   adrs: []
-  docs: []
+  rules: []
+  guides: []
+  projects: [project1, project2] # use project names from projects directory
 ---
 
 ## Objective

@@ -5,6 +5,8 @@ related:
   rfcs: []
   adrs: []
   rules: []
+  guides: []
+  projects: [] # use project names from projects directory
 ---
 
 # Guide Title

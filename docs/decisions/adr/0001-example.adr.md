@@ -5,10 +5,11 @@ title: ADR Title
 status: accepted # rejected, draft
 tags: [tag1, tag2]
 related:
-  projects: [project1, project2] # use project names from projects directory
   rfcs: [0001-example]
+  adrs: []
   rules: [example-rule, another-example-rule]
   guides: []
+  projects: [project1, project2] # use project names from projects directory
 ---
 
 # ADR Title
