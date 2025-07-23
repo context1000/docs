@@ -24,6 +24,7 @@ npm run start
 
 In `docs` folder you should store documentation in the following structure:
 
+```yaml
 - **decisions/**           - Global decisions
   - **adr/**               - Architecture Decision Records (global)
   - **rfc/**               - Request for Comments (global)
@@ -36,6 +37,7 @@ In `docs` folder you should store documentation in the following structure:
     - **decisions/**       - Project-specific decisions (ADRs, RFCs)
     - **guides/**          - Project-specific guides
     - **rules/**           - Project-specific rules and conventions
+```
 
 ### RFC
 
