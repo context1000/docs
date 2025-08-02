@@ -1,14 +1,14 @@
 ---
 name: project1
-title: Project
+title: Project 1
+repository: https://github.com/your-organization/project1
 tags: []
 related:
   rfcs: []
   adrs: []
   rules: []
   guides: []
-  projects: [] # use project names from projects directory
-repository: https://github.com/context1000/project1
+  projects: [project1] 
 ---
 
 # Project 1

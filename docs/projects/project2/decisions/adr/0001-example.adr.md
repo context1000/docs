@@ -9,7 +9,7 @@ related:
   adrs: []
   rules: [example-rule, another-example-rule]
   guides: []
-  projects: [project1] # use project names from projects directory
+  projects: [project2] # use project names from projects directory
 ---
 
 # ADR Title

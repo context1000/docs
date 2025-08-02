@@ -9,7 +9,7 @@ related:
   adrs: []
   rules: []
   guides: []
-  projects: [project1]
+  projects: [project2]
 ---
 
 ## Objective

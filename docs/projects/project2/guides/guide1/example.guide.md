@@ -6,7 +6,7 @@ related:
   adrs: []
   rules: []
   guides: []
-  projects: [project1]
+  projects: [project2] # use project names from projects directory
 ---
 
 # Guide Title

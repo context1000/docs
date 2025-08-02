@@ -1,6 +1,6 @@
 ---
-name: example-rule
-title: Example Rule
+name: example-rule-2
+title: Example Rule 2
 tags: [tag1, tag2]
 related:
   rfcs: []
@@ -10,7 +10,7 @@ related:
   projects: [project1]
 ---
 
-# Rule title
+# Example Rule 2
 
 For all new projects and when updating existing ones:
 

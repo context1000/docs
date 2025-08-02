@@ -29,12 +29,28 @@ In `docs` folder you should store documentation in the following structure:
   - adr/               - Architecture Decision Records (global)
   - rfc/               - Request for Comments (global)
 - guides/              - User and developer guides (global)
+  - guide1/            - Example guide subdirectory (guides can contain nested subdirectories)
 - rules/               - Global rules and conventions (global)
+  - subdirectory/      - Example rules subdirectory (rules can contain nested subdirectories)
 - projects/            - Project-specific documentation
   - project1/          - Example project structure
     - decisions/       - Project-specific decisions (ADRs, RFCs)
-    - guides/          - Project-specific guides
-    - rules/           - Project-specific rules and conventions
+      - adr/           - Project-specific ADRs
+      - rfc/           - Project-specific RFCs
+    - guides/          - Project-specific guides (can contain nested subdirectories)
+      - guide1/        - Example project guide subdirectory
+    - rules/           - Project-specific rules and conventions (can contain nested subdirectories)
+      - subdirectory/  - Example project rules subdirectory
+    - project.md       - Project overview
+    - stack.md         - Technology stack
+  - project2/          - Another example project structure
+    - decisions/       - Project-specific decisions (ADRs, RFCs)
+      - adr/           - Project-specific ADRs
+      - rfc/           - Project-specific RFCs
+    - guides/          - Project-specific guides (can contain nested subdirectories)
+      - guide1/        - Example project guide subdirectory
+    - rules/           - Project-specific rules and conventions (can contain nested subdirectories)
+      - subdirectory/  - Example project rules subdirectory
     - project.md       - Project overview
     - stack.md         - Technology stack
 ```
@@ -60,11 +76,11 @@ Similar to RFCs, it's useful to store rejected ADRs as well as documents in temp
 
 ### Rules
 
-Rules help briefly describe "how it should be" or "should not be" rules, referencing RFCs, ADRs, and other rules and guides in the `related` section. Rules are typically formed after RFC/ADR decisions. You can also create rules independently of other documents, describing statements about the project, code, conventions, etc. Store global rules in `docs/rules/`.
+Rules help briefly describe "how it should be" or "should not be" rules, referencing RFCs, ADRs, and other rules and guides in the `related` section. Rules are typically formed after RFC/ADR decisions. You can also create rules independently of other documents, describing statements about the project, code, conventions, etc. Store global rules in `docs/rules/`. Rules can be organized in nested subdirectories within the rules folder for better categorization.
 
 ### Guides
 
-Guides are instructions for creating or using software entities, projects, modules, and similar. Documentation is written with a focus on clarifying code generation and verification, as well as for developers. Store global guides in `docs/guides/`.
+Guides are instructions for creating or using software entities, projects, modules, and similar. Documentation is written with a focus on clarifying code generation and verification, as well as for developers. Store global guides in `docs/guides/`. Guides can be organized in nested subdirectories within the guides folder for better categorization.
 
 ### Projects
 

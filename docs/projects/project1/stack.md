@@ -1,13 +1,13 @@
 ---
-name: stack
-title: Stack
+name: project1-stack
+title: Project1 stack
 tags: []
 related:
   rfcs: []
   adrs: []
   rules: []
   guides: []
-  projects: [] # use project names from projects directory
+  projects: [project1] 
 ---
 
-# Stack
+# Project1 stack
