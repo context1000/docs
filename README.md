@@ -25,34 +25,54 @@ npm run start
 In `docs` folder you should store documentation in the following structure:
 
 ```yaml
+- intro.md             - Introduction documentation
 - decisions/           - Global decisions
   - adr/               - Architecture Decision Records (global)
+    - 0001-example.adr.md
   - rfc/               - Request for Comments (global)
+    - 0001-example.rfc.md
 - guides/              - User and developer guides (global)
+  - example1.guide.md
   - guide1/            - Example guide subdirectory (guides can contain nested subdirectories)
+    - example2.guide.md
 - rules/               - Global rules and conventions (global)
+  - example1.rules.md
   - subdirectory/      - Example rules subdirectory (rules can contain nested subdirectories)
+    - example2.rules.md
 - projects/            - Project-specific documentation
   - project1/          - Example project structure
+    - project.md       - Project overview
     - decisions/       - Project-specific decisions (ADRs, RFCs)
       - adr/           - Project-specific ADRs
+        - 0001-example.adr.md
       - rfc/           - Project-specific RFCs
+        - 0001-example.rfc.md
     - guides/          - Project-specific guides (can contain nested subdirectories)
+      - architecture.md
+      - project-stack.md
       - guide1/        - Example project guide subdirectory
+        - example.guide.md
     - rules/           - Project-specific rules and conventions (can contain nested subdirectories)
+      - example.rules.md
       - subdirectory/  - Example project rules subdirectory
-    - project.md       - Project overview
-    - stack.md         - Technology stack
-  - project2/          - Another example project structure
-    - decisions/       - Project-specific decisions (ADRs, RFCs)
-      - adr/           - Project-specific ADRs
-      - rfc/           - Project-specific RFCs
-    - guides/          - Project-specific guides (can contain nested subdirectories)
-      - guide1/        - Example project guide subdirectory
-    - rules/           - Project-specific rules and conventions (can contain nested subdirectories)
-      - subdirectory/  - Example project rules subdirectory
-    - project.md       - Project overview
-    - stack.md         - Technology stack
+        - example.rules.md
+  - subdirectory/      - Projects can be organized in nested subdirectories
+    - project2/        - Another example project structure
+      - project.md     - Project overview
+      - decisions/     - Project-specific decisions (ADRs, RFCs)
+        - adr/         - Project-specific ADRs
+          - 0001-example.adr.md
+        - rfc/         - Project-specific RFCs
+          - 0001-example.rfc.md
+      - guides/        - Project-specific guides (can contain nested subdirectories)
+        - architecture.md
+        - project-stack.md
+        - guide1/      - Example project guide subdirectory
+          - example.guide.md
+      - rules/         - Project-specific rules and conventions (can contain nested subdirectories)
+        - example1.rules.md
+        - subdirectory/ - Example project rules subdirectory
+          - example2.rules.md
 ```
 
 ### RFC
