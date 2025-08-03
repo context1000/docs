@@ -1,6 +1,5 @@
 ---
 name: project1
-title: Project 1
 repository: https://github.com/your-organization/project1
 tags: []
 related:
@@ -8,7 +7,9 @@ related:
   adrs: []
   rules: []
   guides: []
-  projects: [project1] 
+  projects: [project1] # use project names from projects directory
 ---
 
-# Project 1
+# project1
+
+information about project here

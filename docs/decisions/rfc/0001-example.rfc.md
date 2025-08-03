@@ -1,5 +1,4 @@
 ---
-# RFC template: https://github.com/tensorflow/community/blob/master/rfcs/yyyymmdd-rfc-template.md
 name: 0001-example 
 title: RFC Title
 status: draft # accepted, rejected

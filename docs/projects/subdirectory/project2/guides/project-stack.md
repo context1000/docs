@@ -11,3 +11,5 @@ related:
 ---
 
 # Project2 stack
+
+information about technology stack here

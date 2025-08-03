@@ -1,16 +1,16 @@
 ---
-name: example-rule-2
-title: Example Rule 2
+name: example-rule-1
+title: Example Rule 1
 tags: [tag1, tag2]
 related:
   rfcs: []
   adrs: []
   rules: []
   guides: []
-  projects: [project2]
+  projects: []
 ---
 
-# Example Rule 2
+# Example Rule 1
 
 For all new projects and when updating existing ones:
 

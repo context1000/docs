@@ -4,15 +4,21 @@ title: Introduction
 sidebar_position: 0
 ---
 
-## RFC (Request for Comments)
+### Decisions
+
+#### RFC (Request for Comments)
 
 Used to propose and evaluate technical change options. RFCs may explore multiple solutions and reference other RFCs, ADRs, guides, or rules. Store in docs/decisions/rfc/. Even rejected RFCs are useful to keep.
 
+[RFC template](https://github.com/tensorflow/community/blob/master/rfcs/yyyymmdd-rfc-template.md)
+
 ⸻
 
-## ADR (Architectural Decision Record)
+#### ADR (Architectural Decision Record)
 
 Captures key architectural decisions and their rationale. May result from an RFC or be created independently. Store in docs/decisions/adr/. Keep both accepted and rejected ADRs.
+
+[ADR template](https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/locales/en/templates/decision-record-template-by-michael-nygard/index.md)
 
 ⸻
 

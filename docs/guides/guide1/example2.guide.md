@@ -1,6 +1,6 @@
 ---
-name: guide1
-title: Guide Title
+name: example-guide-2
+title: Guide Title 2
 related:
   rfcs: []
   adrs: []
@@ -9,7 +9,7 @@ related:
   projects: [] # use project names from projects directory
 ---
 
-# Guide Title
+# Guide Title 2
 
 ## Part 1
 
