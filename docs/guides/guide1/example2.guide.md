@@ -1,15 +1,16 @@
 ---
-name: example-guide-2
-title: Guide Title 2
-related:
-  rfcs: []
-  adrs: []
-  rules: []
-  guides: []
-  projects: [] # use project names from projects directory
+name: guide-name              # Unique identifier for the guide
+title: Guide title            # Human-readable title
+tags: [tag1, tag2]            # Categorization tags
+related:                      # Cross-references to related documents (one or many)
+  rfcs: [0001-rfc-name]       # Related RFCs by name
+  adrs: [0001-adr-name]       # Related ADRs by name
+  rules: [rule-name]          # Related rules by name
+  guides: [guide-name]        # Related guides by name
+  projects: [project-name]    # Related projects by name
 ---
 
-# Guide Title 2
+# Guide name
 
 ## Part 1
 

@@ -1,15 +1,16 @@
 ---
-name: project2
-repository: https://github.com/your-organization/project2
-tags: []
-related:
-  rfcs: []
-  adrs: []
-  rules: []
-  guides: []
-  projects: [project2] # use project names from projects directory
+name: project-name            # Unique identifier for the project
+title: Project                # Human-readable title
+tags: [tag1, tag2]            # Categorization tags
+repository: <link>            # Project repository URL
+related:                      # Cross-references to related documents (one or many)
+  rfcs: [0001-rfc-name]       # Related RFCs by name
+  adrs: [0001-adr-name]       # Related ADRs by name
+  rules: [rule-name]          # Related rules by name
+  guides: [guide-name]        # Related guides by name
+  projects: [project-name]    # Related projects by name
 ---
 
-# project2
+# Project name
 
 information about project here

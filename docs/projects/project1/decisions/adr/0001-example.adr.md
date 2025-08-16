@@ -1,14 +1,14 @@
 ---
-name: 0003-example
-title: ADR Title
-status: accepted # rejected, draft
-tags: [tag1, tag2]
-related:
-  rfcs: [0001-example]
-  adrs: []
-  rules: [example-rule, another-example-rule]
-  guides: []
-  projects: [project1] # use project names from projects directory
+name: 0003-adr-name           # Unique identifier for the ADR
+title: ADR Title              # Human-readable title
+status: accepted              # accepted, rejected, draft
+tags: [tag1, tag2]            # Categorization tags
+related:                      # Cross-references to related documents (one or many)
+  rfcs: [0001-rfc-name]       # Related RFCs by name
+  adrs: [0001-adr-name]       # Related ADRs by name
+  rules: [rule-name]          # Related rules by name
+  guides: [guide-name]        # Related guides by name
+  projects: [project-name]    # Related projects by name
 ---
 
 # ADR Title
