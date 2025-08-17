@@ -83,3 +83,4 @@ related:
 
 - [Ready to use templates (docusarus, mintlify) with context1000 structure](https://github.com/context1000/templates)
 - [RAG+MCP for self-hosted usage](https://github.com/context1000/context1000)
+- [Blog post about context1000](https://www.ivklgn.blog/posts/context1000-architectural-artifacts-for-ai/)
