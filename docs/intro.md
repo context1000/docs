@@ -49,8 +49,8 @@ Self-contained documentation following the same structure. Each project includes
 Files follow strict naming patterns for AI parsing and cross-referencing:
 
 ```sh
-decisions/adr/NNNN-name.adr.md    # 0001-auth-decision.adr.md
-decisions/rfc/NNNN-name.rfc.md    # 0001-auth-proposal.rfc.md
+decisions/adr/name.adr.md    # auth-decision.adr.md
+decisions/rfc/name.rfc.md    # auth-proposal.rfc.md
 rules/name.rules.md               # auth-security.rules.md
 guides/name.guide.md              # auth-quickstart.guide.md
 projects/name/project.md          # auth/project.md

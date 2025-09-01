@@ -1,14 +1,14 @@
 ---
-name: 0003-rfc-name           # Unique identifier for the RFC
-title: RFC Title              # Human-readable title
-status: accepted              # accepted, rejected, draft
-tags: [tag1, tag2]            # Categorization tags
-related:                      # Cross-references to related documents (one or many)
-  rfcs: [0001-rfc-name]       # Related RFCs by name
-  adrs: [0001-adr-name]       # Related ADRs by name
-  rules: [rule-name]          # Related rules by name
-  guides: [guide-name]        # Related guides by name
-  projects: [project-name]    # Related projects by name
+name: rfc-name # Unique identifier for the RFC
+title: RFC Title # Human-readable title
+status: accepted # accepted, rejected, draft
+tags: [tag1, tag2] # Categorization tags
+related: # Cross-references to related documents (one or many)
+  rfcs: [rfc-name] # Related RFCs by name
+  adrs: [adr-name] # Related ADRs by name
+  rules: [rule-name] # Related rules by name
+  guides: [guide-name] # Related guides by name
+  projects: [project-name] # Related projects by name
 ---
 
 ## Summary
