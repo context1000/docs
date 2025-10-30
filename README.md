@@ -7,18 +7,46 @@ A strict documentation format designed exclusively for AI agents. Four artifact 
 ## Structure
 
 ```sh
-docs/
+.context1000/
+├── intro.md                  # Introduction and overview
 ├── decisions/                # Why we chose this approach
 │   ├── adr/                  # Architectural Decision Records (implementation details)
+│   │   └── example.adr.md
 │   └── rfc/                  # Request for Comments (proposals and options)
+│       └── example.rfc.md
 ├── rules/                    # What must and must not be done (imperatives derived from decisions)
+│   ├── example1.rules.md
+│   └── subdirectory/         # Subdirectories supported for organization
+│       └── example2.rules.md
 ├── guides/                   # How to implement and use (practical instructions)
-└── projects/                 # Project-specific documentation
-    └── [project]/
-        ├── decisions/        # Project-specific ADRs and RFCs
-        ├── rules/            # Project-specific rules
-        ├── guides/           # Project-specific guides
-        └── project.md        # Project overview
+│   ├── example1.guide.md
+│   └── subdirectory/         # Subdirectories supported for organization
+│       └── example2.guide.md
+└── projects/                 # Project-specific documentation (only projects, no subdirectories)
+    ├── project1/
+    │   ├── project.md        # Project overview
+    │   ├── decisions/        # Project-specific ADRs and RFCs
+    │   │   ├── adr/
+    │   │   └── rfc/
+    │   ├── rules/            # Project-specific rules
+    │   │   └── subdirectory/ # Subdirectories supported
+    │   ├── guides/           # Project-specific guides
+    │   │   └── subdirectory/ # Subdirectories supported
+    │   └── projects/         # Nested sub-projects
+    │       └── subproject1/
+    │           ├── project.md
+    │           ├── decisions/
+    │           ├── rules/
+    │           └── guides/
+    └── project2/
+        ├── project.md
+        ├── decisions/
+        │   ├── adr/
+        │   └── rfc/
+        ├── rules/
+        │   └── subdirectory/
+        └── guides/
+            └── subdirectory/
 ```
 
 ## Artifact Types
@@ -42,23 +70,35 @@ Implementation and usage details. Reference decisions and rules. Cover installat
 
 Self-contained documentation following the same structure. Each project includes decisions, rules, guides, and a project.md overview.
 
+**Important Notes:**
+
+- The root-level `projects/` directory contains only project directories (no subdirectories for organization)
+- Individual projects can contain nested sub-projects following the same structure
+- Each project and sub-project must have a `project.md` file
+
 ## Naming Conventions
 
 Files follow strict naming patterns for AI parsing and cross-referencing:
 
 ```sh
-decisions/adr/name.adr.md    # auth-decision.adr.md
-decisions/rfc/name.rfc.md    # auth-proposal.rfc.md
-rules/name.rules.md               # auth-security.rules.md
-guides/name.guide.md              # auth-quickstart.guide.md
-projects/name/project.md          # auth/project.md
+.context1000/decisions/adr/name.adr.md       # example.adr.md
+.context1000/decisions/rfc/name.rfc.md       # example.rfc.md
+.context1000/rules/name.rules.md             # example1.rules.md
+.context1000/rules/subdirectory/name.rules.md # example2.rules.md
+.context1000/guides/name.guide.md            # example1.guide.md
+.context1000/guides/subdirectory/name.guide.md # example2.guide.md
+.context1000/projects/name/project.md        # project1/project.md
 ```
 
 **Pattern Rules:**
 
-- ADR/RFC: 4-digit sequence + descriptive name + type extension
+- All artifacts live under `.context1000/` directory
+- ADR/RFC: Descriptive name + type extension
 - Rules/Guides: Descriptive name + type extension
+- Subdirectories are supported within rules/, guides/, and project-specific directories for better organization
 - Projects: Directory name matches project identifier
+  - Root-level `projects/` contains only project directories (no organizational subdirectories)
+  - Individual projects can contain nested `projects/` directories for sub-projects
 - Use kebab-case for all names
 - Extensions (.adr.md, .rfc.md, .rules.md, .guide.md) enable type-based tooling
 
@@ -81,6 +121,5 @@ related:
 
 ## More information
 
-- [Ready to use templates (docusarus, mintlify) with context1000 structure](https://github.com/context1000/templates)
 - [RAG+MCP for self-hosted usage](https://github.com/context1000/context1000)
 - [Blog post about context1000](https://www.ivklgn.blog/posts/context1000-architectural-artifacts-for-ai/)
