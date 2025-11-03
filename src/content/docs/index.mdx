@@ -1,0 +1,126 @@
+---
+title: context1000
+description: Architectural artifacts optimized for AI agents
+template: splash
+hero:
+  tagline: A strict documentation format designed exclusively for AI agents. Four artifact types capture both the "why" behind decisions and the resulting rules and instructions.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get Started
+      link: /guides/getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: View Format Specification
+      link: /reference/format-specification/
+      icon: document
+    - text: GitHub
+      link: https://github.com/context1000/context1000
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What is context1000?
+
+context1000 is a documentation framework designed specifically to optimize AI tool integration. It addresses a fundamental challenge in AI-assisted development: **the completeness and accuracy of the provided context are crucial** for AI agents to produce high-quality outputs.
+
+The approach centers on "Documentation FOR AI only" — writing and structuring documentation exclusively for AI agents rather than human audiences. This inverts traditional documentation priorities, treating **technical documentation as a prompt**.
+
+## Core Concepts
+
+<CardGrid stagger>
+  <Card title="Four Artifact Types" icon="document">
+    **Decisions** (RFCs & ADRs), **Rules**, **Guides**, and **Projects** — each serving a specific purpose in the documentation hierarchy.
+  </Card>
+  <Card title="Structured Relationships" icon="puzzle">
+    Explicit cross-referencing between artifacts with dependencies and supersession tracking.
+  </Card>
+  <Card title="RAG-Powered" icon="rocket">
+    Built-in retrieval-augmented generation system exposing documentation via Model Context Protocol (MCP).
+  </Card>
+  <Card title="AI-First Design" icon="star">
+    Standardized formats minimize documentation clutter and maximize AI comprehension.
+  </Card>
+</CardGrid>
+
+## Key Features
+
+### Built-in Feedback Loop
+Poor documentation produces mediocre AI outputs, creating immediate incentive to improve documentation quality. Verified calibrations benefit entire teams.
+
+### Retrieval-Augmented Generation
+Vector search with Qdrant enables semantic documentation queries, with chunking strategies optimized for text-embedding-3-small (1200 tokens per chunk with 200-token overlap).
+
+### Model Context Protocol Integration
+Four specialized tools for AI agents:
+- `check_project_rules` - Retrieve project constraints and requirements
+- `search_guides` - Find implementation patterns and examples
+- `search_decisions` - Access architectural decision context
+- `search_documentation` - Fallback general search
+
+### Flexible Organization
+Support for subdirectories within rules and guides, plus nested projects for complex architectures.
+
+## Architecture
+
+```
+.context1000/
+├── decisions/      # RFCs and ADRs
+├── rules/          # Derived imperatives
+├── guides/         # Implementation details
+└── projects/       # Project-specific docs
+```
+
+Each artifact type follows strict naming conventions (.adr.md, .rfc.md, .rules.md, .guide.md) and uses YAML front matter for metadata and cross-references.
+
+## Quick Start
+
+<CardGrid>
+  <Card title="Install" icon="rocket">
+    ```bash
+    npm install -g context1000
+    ```
+  </Card>
+  <Card title="Setup Qdrant" icon="setting">
+    ```bash
+    docker run -p 6333:6333 qdrant/qdrant
+    ```
+  </Card>
+  <Card title="Index Docs" icon="add-document">
+    ```bash
+    context1000 index .context1000
+    ```
+  </Card>
+  <Card title="Start MCP Server" icon="server">
+    ```bash
+    context1000 mcp --transport http --port 3000
+    ```
+  </Card>
+</CardGrid>
+
+## Use Cases
+
+- **Software Architecture Documentation** - Capture decisions, rationale, and implementation guidelines
+- **Team Knowledge Management** - Share verified patterns and constraints across teams
+- **AI-Assisted Development** - Provide context for code generation and review
+- **Project Onboarding** - Structured knowledge base for new team members (via AI)
+- **Technical Debt Tracking** - Link rules to decisions and track supersession
+
+## Next Steps
+
+<CardGrid>
+  <Card title="Getting Started" icon="open-book">
+    Follow the [step-by-step guide](/guides/getting-started/) to set up your first context1000 project.
+  </Card>
+  <Card title="Format Specification" icon="document">
+    Learn about the [format specification](/reference/format-specification/) and naming conventions.
+  </Card>
+  <Card title="Artifact Types" icon="list-format">
+    Explore each [artifact type](/guides/artifact-types/) and when to use them.
+  </Card>
+  <Card title="MCP Integration" icon="puzzle">
+    Configure [MCP integration](/guides/mcp-integration/) with Claude Code and other AI tools.
+  </Card>
+</CardGrid>
