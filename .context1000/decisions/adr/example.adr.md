@@ -11,8 +11,6 @@ related: # Cross-references to related documents (one or many)
   projects: [project-name] # Related projects by name
 ---
 
-# ADR Title
-
 ## Context
 
 What is the issue that we're seeing that is motivating this decision or change?

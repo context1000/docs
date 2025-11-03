@@ -10,8 +10,6 @@ related: # Cross-references to related documents (one or many)
   projects: [project-name] # Related projects by name
 ---
 
-# Guide name
-
 ## Part 1
 
 Documentation paragraph

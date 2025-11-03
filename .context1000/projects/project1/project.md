@@ -11,6 +11,4 @@ related: # Cross-references to related documents (one or many)
   projects: [project-name] # Related projects by name
 ---
 
-# Project name
-
 information about project here

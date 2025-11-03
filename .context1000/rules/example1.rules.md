@@ -10,8 +10,6 @@ related: # Cross-references to related documents (one or many)
   projects: [project-name] # Related projects by name
 ---
 
-# Rule name
-
 For all new projects and when updating existing ones:
 
 1. use Vitest as the primary testing framework
