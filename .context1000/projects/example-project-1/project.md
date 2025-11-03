@@ -1,13 +1,15 @@
 ---
-name: guide-name # Unique identifier for the guide
-title: Guide title # Human-readable title
-tags: [tag1, tag2] # Categorization tags
+name: example-project-1 # Unique identifier for the project
+title: Example Project 1 # Human-readable title
+tags: [example, project] # Categorization tags
+repository: <link> # Project repository URL
+slug: /projects/example-project-1.project/
 related: # Cross-references to related documents (one or many)
-  rfcs: [rfc-name] # Related RFCs by name
-  adrs: [adr-name] # Related ADRs by name
-  rules: [rule-name] # Related rules by name
-  guides: [guide-name] # Related guides by name
-  projects: [project-name] # Related projects by name
+  rfcs: [example-rfc-2] # Related RFCs by name
+  adrs: [example-adr-2] # Related ADRs by name
+  rules: [example-rule-3] # Related rules by name
+  guides: [example-guide-3] # Related guides by name
+  projects: [] # Related projects by name
   depends-on: # Dependencies - documents that must exist/be decided first
     adrs: [] # ADRs depends on
     rfcs: [] # RFCs depends on
@@ -22,10 +24,4 @@ related: # Cross-references to related documents (one or many)
     projects: [] # Projects superseded
 ---
 
-## Part 1
-
-Documentation paragraph
-
-## Part 2
-
-One more documentation here
+information about project here

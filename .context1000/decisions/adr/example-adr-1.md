@@ -1,14 +1,13 @@
 ---
-name: adr-name # Unique identifier for the ADR
-title: ADR Title # Human-readable title
+name: example-adr-1 # Unique identifier for the ADR
+title: Example ADR 1 # Human-readable title
 status: accepted # accepted, rejected, draft
-tags: [tag1, tag2] # Categorization tags
+tags: [example, adr] # Categorization tags
+slug: /decisions/adr/example-adr-1.adr/
 related: # Cross-references to related documents (one or many)
-  rfcs: [rfc-name] # Related RFCs by name
-  adrs: [adr-name] # Related ADRs by name
-  rules: [rule-name] # Related rules by name
-  guides: [guide-name] # Related guides by name
-  projects: [project-name] # Related projects by name
+  rfcs: [example-rfc-1] # Related RFCs by name
+  guides: [example-guide-1] # Related guides by name
+  rules: [example-rule-1] # Related rules by name
   depends-on: # Dependencies - documents that must exist/be decided first
     adrs: [] # ADRs depends on
     rfcs: [] # RFCs depends on

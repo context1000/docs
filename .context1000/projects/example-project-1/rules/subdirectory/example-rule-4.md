@@ -1,13 +1,14 @@
 ---
-name: rule-name # Unique identifier for the rule
-title: Rule title # Human-readable title
-tags: [tag1, tag2] # Categorization tags
+name: example-rule-4 # Unique identifier for the rule
+title: Example Rule 4 # Human-readable title
+tags: [example, rule] # Categorization tags
+slug: /projects/example-project-1/rules/subdirectory/example-rule-4.rule/
 related: # Cross-references to related documents (one or many)
-  rfcs: [rfc-name] # Related RFCs by name
-  adrs: [adr-name] # Related ADRs by name
-  rules: [rule-name] # Related rules by name
-  guides: [guide-name] # Related guides by name
-  projects: [project-name] # Related projects by name
+  rfcs: [example-rfc-2] # Related RFCs by name
+  adrs: [example-adr-2] # Related ADRs by name
+  rules: [example-rule-3] # Related rules by name
+  guides: [example-guide-4] # Related guides by name
+  projects: [example-project-1] # Related projects by name
   depends-on: # Dependencies - documents that must exist/be decided first
     adrs: [] # ADRs depends on
     rfcs: [] # RFCs depends on

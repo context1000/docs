@@ -1,14 +1,12 @@
 ---
-name: rfc-name # Unique identifier for the RFC
-title: RFC Title # Human-readable title
+name: example-rfc-1 # Unique identifier for the RFC
+title: Example RFC 1 # Human-readable title
 status: accepted # accepted, rejected, draft
-tags: [tag1, tag2] # Categorization tags
+tags: [example, rfc] # Categorization tags
+slug: /decisions/rfc/example-rfc-1.rfc/
 related: # Cross-references to related documents (one or many)
-  rfcs: [rfc-name] # Related RFCs by name
-  adrs: [adr-name] # Related ADRs by name
-  rules: [rule-name] # Related rules by name
-  guides: [guide-name] # Related guides by name
-  projects: [project-name] # Related projects by name
+  adrs: [example-adr-1] # Related ADRs by name
+  guides: [example-guide-1] # Related guides by name
   depends-on: # Dependencies - documents that must exist/be decided first
     adrs: [] # ADRs depends on
     rfcs: [] # RFCs depends on

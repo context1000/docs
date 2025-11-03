@@ -1,13 +1,11 @@
 ---
-name: guide-name # Unique identifier for the guide
-title: Guide title # Human-readable title
-tags: [tag1, tag2] # Categorization tags
+name: example-rule-1 # Unique identifier for the rule
+title: Example Rule 1 # Human-readable title
+tags: [example, rule] # Categorization tags
+slug: /rules/example-rule-1.rule/
 related: # Cross-references to related documents (one or many)
-  rfcs: [rfc-name] # Related RFCs by name
-  adrs: [adr-name] # Related ADRs by name
-  rules: [rule-name] # Related rules by name
-  guides: [guide-name] # Related guides by name
-  projects: [project-name] # Related projects by name
+  adrs: [example-adr-1] # Related ADRs by name
+  guides: [example-guide-1] # Related guides by name
   depends-on: # Dependencies - documents that must exist/be decided first
     adrs: [] # ADRs depends on
     rfcs: [] # RFCs depends on
@@ -22,10 +20,8 @@ related: # Cross-references to related documents (one or many)
     projects: [] # Projects superseded
 ---
 
-## Part 1
+For all new projects and when updating existing ones:
 
-Documentation paragraph
-
-## Part 2
-
-One more documentation here
+1. use Vitest as the primary testing framework
+2. migrate from Jest to Vitest when possible
+3. use native TypeScript support without additional transformations
