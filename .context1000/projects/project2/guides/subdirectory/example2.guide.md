@@ -8,6 +8,18 @@ related: # Cross-references to related documents (one or many)
   rules: [rule-name] # Related rules by name
   guides: [guide-name] # Related guides by name
   projects: [project-name] # Related projects by name
+  depends-on: # Dependencies - documents that must exist/be decided first
+    adrs: [] # ADRs depends on
+    rfcs: [] # RFCs depends on
+    guides: [] # Guides depends on
+    rules: [] # Rules depends on
+    projects: [] # Projects depends on
+  supersedes: # Documents that this replaces/deprecates
+    adrs: [] # ADRs superseded
+    rfcs: [] # RFCs superseded
+    guides: [] # Guides superseded
+    rules: [] # Rules superseded
+    projects: [] # Projects superseded
 ---
 
 ## Part 1

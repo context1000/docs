@@ -1,0 +1,5 @@
+# GitHub Pages Configuration
+title: context1000
+description: Architectural Artifacts for AI
+theme: jekyll-theme-minimal
+show_downloads: true
