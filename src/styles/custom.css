@@ -1,0 +1,14 @@
+:root[data-theme='light'] {
+  --sl-color-bg: #FCFBF4;
+  --sl-color-bg-nav: #FCFBF4;
+  --sl-color-bg-sidebar: #FCFBF4;
+}
+
+/* Direct header styling for light theme */
+[data-theme='light'] header {
+  background-color: #FCFBF4 !important;
+}
+
+[data-theme='light'] .header {
+  background-color: #FCFBF4 !important;
+}

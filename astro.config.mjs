@@ -10,6 +10,7 @@ export default defineConfig({
       title: "context1000",
       description: "Architectural artifacts optimized for AI agents",
       plugins: [starlightThemeRapide()],
+      customCss: ['./src/styles/custom.css'],
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/context1000" }],
       sidebar: [
         {
