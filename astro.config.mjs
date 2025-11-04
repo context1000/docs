@@ -16,14 +16,23 @@ export default defineConfig({
         {
           label: "Getting Started",
           items: [
-            { label: "Introduction", slug: "index" },
-            { label: "Getting Started", slug: "guides/getting-started" },
+            { label: "Local RAG Setup", slug: "getting-started/local-rag" },
+            { label: "Claude Code Plugin", slug: "getting-started/claude-code-plugin" },
+          ],
+        },
+        {
+          label: "Core Concepts",
+          items: [
+            { label: "Overview", slug: "core-concepts/overview" },
+            { label: "Decisions", slug: "core-concepts/decisions" },
+            { label: "Rules", slug: "core-concepts/rules" },
+            { label: "Guides", slug: "core-concepts/guides" },
+            { label: "Projects", slug: "core-concepts/projects" },
           ],
         },
         {
           label: "Guides",
           items: [
-            { label: "Artifact Types", slug: "guides/artifact-types" },
             { label: "MCP Integration", slug: "guides/mcp-integration" },
             { label: "Examples", slug: "guides/examples" },
           ],

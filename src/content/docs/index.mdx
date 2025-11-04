@@ -8,9 +8,12 @@ hero:
     file: ../../../public/logo.png
   actions:
     - text: Get Started
-      link: /guides/getting-started/
+      link: /getting-started/local-rag/
       icon: right-arrow
       variant: primary
+    - text: Core Concepts
+      link: /core-concepts/overview/
+      icon: open-book
     - text: View Format Specification
       link: /reference/format-specification/
       icon: document
@@ -111,16 +114,16 @@ Each artifact type follows strict naming conventions (.adr.md, .rfc.md, .rules.m
 ## Next Steps
 
 <CardGrid>
-  <Card title="Getting Started" icon="open-book">
-    Follow the [step-by-step guide](/guides/getting-started/) to set up your first context1000 project.
+  <Card title="Local RAG Setup" icon="rocket">
+    Follow the [step-by-step guide](/getting-started/local-rag/) to set up context1000 with Qdrant.
+  </Card>
+  <Card title="Claude Code Plugin" icon="puzzle">
+    Configure the [Claude Code plugin](/getting-started/claude-code-plugin/) to integrate with your AI workflow.
+  </Card>
+  <Card title="Core Concepts" icon="open-book">
+    Understand the [four artifact types](/core-concepts/overview/) and how they work together.
   </Card>
   <Card title="Format Specification" icon="document">
     Learn about the [format specification](/reference/format-specification/) and naming conventions.
-  </Card>
-  <Card title="Artifact Types" icon="list-format">
-    Explore each [artifact type](/guides/artifact-types/) and when to use them.
-  </Card>
-  <Card title="MCP Integration" icon="puzzle">
-    Configure [MCP integration](/guides/mcp-integration/) with Claude Code and other AI tools.
   </Card>
 </CardGrid>

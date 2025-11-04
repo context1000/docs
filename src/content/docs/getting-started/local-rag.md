@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: Set up context1000 in your project
+title: Local RAG Setup
+description: Set up context1000 with local RAG using Qdrant and OpenAI
 ---
 
 This guide walks you through setting up context1000 for your project, from installation to your first documentation artifacts.
